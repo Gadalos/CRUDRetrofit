@@ -40,6 +40,7 @@ public class EditActivity extends AppCompatActivity {
         Intent detailIntent = getIntent();
         product = (Product) detailIntent.getSerializableExtra("product");
 
+
         // Inicializa los elementos de la interfaz de usuario y establece los valores actuales del producto
         nameText = findViewById(R.id.nameText);
         priceText = findViewById(R.id.priceText);

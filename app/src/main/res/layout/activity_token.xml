@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TokenActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondog"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-28dp" />
+
+    <ImageView
+        android:id="@+id/imageViewToken"
+        android:layout_width="169dp"
+        android:layout_height="172dp"
+        android:src="@drawable/token"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="120dp"/>
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00DCCDF6"
+        android:fontFamily="cursive"
+        android:text="Bienvenido!"
+        android:textAlignment="center"
+        android:textColor="#004AAD"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00DCCDF6"
+        android:fontFamily="@font/martel_normal"
+        android:text="Hola! Para corroborar tu identidad por favor ingresa el código generado automáticamente."
+        android:textAlignment="center"
+        android:textColor="#004AAD"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="380dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewFondoTxt"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="550dp"
+        android:src="@drawable/fondo_txt" />
+
+    <Button
+        android:id="@+id/btnGenerateCode"
+        android:layout_width="169dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#004AAD"
+        android:text="Obtener Código"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/btnGenerateCode"
+        android:backgroundTint="#00FFFFFF"
+        android:hint="Ingrese el Código"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="#004AAD" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextCode"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnValidateCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="#004AAD"
+        android:text="Validar Código"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

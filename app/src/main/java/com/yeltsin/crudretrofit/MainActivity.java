@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -49,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
 
         // Llamada al método para obtener todos los productos
         getAll();
+
+        // Agrega esto después de la configuración del botón de creación
+        ImageButton btnCerrarSesion = findViewById(R.id.btnCerrarSesion);
+        btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cerrarSesion();
+            }
+        });
     }
 
     // Método para obtener todos los productos mediante Retrofit
@@ -93,4 +103,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), CreateActivity.class);
         startActivity(intent);
     }
+    private void cerrarSesion() {
+
+        // Redirige a LoginActivity
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        startActivity(intent);
+        finish();
+    }
+
 }

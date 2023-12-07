@@ -5,13 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".MainActivity">
+
+    <!-- ImageView para la imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondog"
+        android:scaleType="centerCrop" />
+
+    <!-- Agregado: Botón para cerrar sesión en la esquina superior izquierda -->
+
+    <ImageButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/cerrar"/>
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="80dp"
+        android:background="#A9FFFEFE"
+        android:fontFamily="cursive"
+        android:text="Lista de Productos"
+        android:textAlignment="center"
+        android:textColor="#1A2677"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginTop="20dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/createButton"
@@ -19,9 +52,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:foregroundGravity="bottom|right"
         android:src="@drawable/baseline_add_circle_24"
+        app:backgroundTint="#00D5FB"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </RelativeLayout>

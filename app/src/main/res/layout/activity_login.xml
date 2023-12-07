@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+
+        <ImageView
+            android:id="@+id/imageViewFondo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fondog"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-28dp" />
+
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="215dp"
+            android:layout_height="209dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00DCCDF6"
+        android:fontFamily="cursive"
+        android:text="Bienvenido!"
+        android:textAlignment="center"
+        android:textColor="#062EBD"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+        <ImageView
+            android:id="@+id/imageViewFondoTexto"
+            android:layout_width="345dp"
+            android:layout_height="106dp"
+            android:src="@drawable/txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.608" />
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/martel_normal"
+            android:text="Usuario"
+            android:textColor="#062EBD"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewFondoTexto"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="40dp"/>
+
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#008C52FF"
+        android:fontFamily="@font/martel_font"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+
+
+        <ImageView
+            android:id="@+id/imageViewFondoTexto2"
+            android:layout_width="347dp"
+            android:layout_height="113dp"
+            android:src="@drawable/txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.799" />
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/martel_normal"
+            android:text="Contraseña"
+            android:textColor="#062EBD"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewFondoTexto2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="40dp" />
+
+    <EditText
+        android:id="@+id/edtContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/martel_font"
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+        <Button
+            android:id="@+id/btnBoton"
+            android:layout_width="179dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="#FBFBFB"
+            android:text="Iniciar Sesión"
+            android:textColor="#062EBD"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

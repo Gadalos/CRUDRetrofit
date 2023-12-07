@@ -102,7 +102,7 @@ public class CreateActivity extends AppCompatActivity {
                     return;
                 }
                 Product product = response.body();
-                Toast toast = Toast.makeText(getApplicationContext(), product.getName() + ", agregardo!!", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), product.getName() + ", agregado!!", Toast.LENGTH_LONG);
                 toast.show();
                 // Llama al método para volver a la actividad principal
                 callMain();
